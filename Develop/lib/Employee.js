@@ -1,26 +1,38 @@
-// TODO: Write code to define and export the Employee class
-class Employee {
-    constructor(name, id, email) {
+// Class Employee
+class Employee{
+    // constructor
+    constructor(name, id, email){
+        // throw errors in case not provided 'name, 'id', 'email'
+        // commented due to not supported from test cases
+        // if(!name){
+        //     throw new Error("You should provide a NAME");
+        // }
+        // if(!id){
+        //     throw new Error("You should provide an ID");
+        // }
+        // if(!email){
+        //     throw new Error("You should provide an EMAIL");
+        // }
         this.name = name;
         this.id = id;
         this.email = email;
     }
-
-    getName() {
-        return this.name
+    // getName method
+    getName(){
+        return this.name;
     }
-
-    getId() {
-        return this.id
+    // getEmail method
+    getEmail(){
+        return this.email;
     }
-
-    getEmail() {
-        return this.email
+    // getId method
+    getId(){
+        return this.id;
     }
-
-    getRole() {
-        return "Employee"
+    // getRole method
+    getRole(){
+        return "Employee";
     }
 }
 
-module.exports = Employee
+module.exports = Employee;
